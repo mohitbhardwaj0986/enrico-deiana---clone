@@ -1,20 +1,137 @@
+@font-face {
+    font-family:"ubuntu" ;
+    src: url(assets/4iCu6KVjbNBYlgoKej70l0k.ttf);
+}
+@font-face {
+    font-family:"pp migra extralight" ;
+    src: url(61db6f9a40b7c1839352ac16_PPMigra-Extralight.ttf);
+}
+@font-face {
+    font-family:"granslang b-Side" ;
+    src: url(61b74e803fc3c6e1863f2b86_GrandSlang-B-Side.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #1E2125;
+    color: white;
+    color: #979289;
+    /* cursor: none; */
+}
+
 #loader{
     height: 100%;
     width: 100%;
-    background-color: antiquewhite;
- display: flex;
+    background-color: rgb(234, 205, 167);
+    color: black;
+ display: flex;  
  justify-content: center;
  align-items: center;
  font-family: "pp migra extralight";
  font-size: 2vw;
  font-weight: 100;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ color: #979289;
+ font-family:"granslang b-Side" ;
+}
+#hero1,#hero2{
+    font-family:"granslang b-Side" ;
+    font-size: 5vw;
+    font-weight: lighter;
+}
+#hero3{
+    font-size: 4vw;
+    font-weight: 100;
+}
+#hero4 span{
+    font-weight: 100;
+    font-size: 1.9vw;
+
+}
+#hero4{
+    font-size: 2vw;
+}
+.page1-heaidng{
+    line-height: 9vw;
+    overflow: hidden;
+}
+.page1-heaidng h1{
+   height: fit-content;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding: 1vw 5vw;
+    position: relative;
+}
+.star{
+    width: 3vw;
+    margin: auto;
+    padding-bottom: 10vw;
+}
+.text-curcle{
+    display: flex;
+    justify-content: center;
+}
+.page2-pera{
+    width: 50%;
+    font-size: 1.5vw;
+    padding: 0 10vw;
+    /* background-color: red; */
+}
+.page2-pera p{
+    width: 100%;
+    /* background-color: red; */
+}
+.pushme{
+    position: absolute;
+   
+}
+.curcle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* background-color: aqua; */
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#page3 h1{
+font-size: 20vw;
+display: inline-block;
+animation-name: h1move;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+font-weight: 100;
+font-family:"pp migra extralight" ;
+}
+@keyframes h1move {
+    from{
+transform: translateX(0%);
+    }
+    to{
+        transform: translateX(calc(-100% - 4px));
+    }
 }
