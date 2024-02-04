@@ -27,7 +27,9 @@ body{
     color: #979289;
     /* cursor: none; */
 }
-
+#main{
+    overflow: hidden;
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -135,3 +137,71 @@ transform: translateX(0%);
         transform: translateX(calc(-100% - 4px));
     }
 }
+@media only screen and (max-width: 600px) {
+    
+    
+    #hero1,#hero2{
+        font-family:"granslang b-Side" ;
+        font-size: 7vw;
+        font-weight: lighter;
+    }
+    #hero3{
+        font-size: 4vw;
+        font-weight: 100;
+    }
+    #hero4 span{
+        font-weight: 100;
+        font-size: 1.9vw;
+    
+    }
+    #hero4{
+        font-size: 2vw;
+    }
+    .page1-heaidng{
+        line-height: 12vw;
+        overflow: hidden;
+    }
+    .page1-heaidng h1{
+       height: fit-content;
+    }
+
+    .text-curcle{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page2-pera{
+        width: 100%;
+        font-size: 3vw;
+        padding: 0 10vw;
+        /* background-color: red; */
+    }
+    .page2-pera p{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .pushme{
+        position: absolute;
+       
+    }
+    .curcle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        /* background-color: aqua; */
+        margin-top: 10vw;
+
+    }
+.curcle-img{
+    width: 50vw;
+}
+#page3 h1{
+    margin-top: 20vw;
+    }
+
+  }
