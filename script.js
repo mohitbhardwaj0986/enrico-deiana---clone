@@ -101,9 +101,10 @@ Shery.textAnimate(".page2-p" /* Element to target.*/, {
 // let bgChange = document.querySelector("#page4")
 
 let page4Img = document.querySelector("#page4 img");
-let bgChnager2 = document.querySelector(".bg-change2");
-let bgChnager3 = document.querySelector(".bg-change3");
-let bgChnager4 = document.querySelector(".bg-change4");
+let bgChnager2 = document.querySelector(".bg-change2 img");
+let bgChnager3 = document.querySelector(".bg-change3 img");
+let bgChnager4 = document.querySelector(".bg-change4 img");
+let buttomEffect = document.querySelector("#page6 button")
 const bgChanger = ()=>{
   page4Img.addEventListener("mouseover", () => {
     gsap.to("body", {
@@ -162,3 +163,11 @@ const bgChanger = ()=>{
   
 }
 bgChanger()
+
+Shery.makeMagnet("#page6 button" /* Element to target.*/, {
+  //Parameters are optional.
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 0,
+});
+
+

@@ -297,3 +297,62 @@ body {
 #page4 img:hover body{
     background-color: red;
 }
+
+#page6{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page6 button{
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+ color: #333434;
+}
+#page7{
+  height: 80vh;
+  width: 100%;
+ white-space: nowrap;
+}
+.moving1 h1{
+  display: inline-block;
+  font-size: 66px;
+  animation-name: h1moving;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h1moving {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(calc(-100% - 4px));
+  }
+}
+.moving2 h1{
+  display: inline-block;
+  font-size: 130px;
+  font-weight: 100;
+  animation-name: h1moving;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+
+
+
+
+
+
+#page8{
+  height: 80vh;
+  width: 100%;
+ 
+}
