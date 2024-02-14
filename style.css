@@ -29,7 +29,7 @@ body {
   /* cursor: none; */
 }
 #main {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #loader {
   height: 100%;
