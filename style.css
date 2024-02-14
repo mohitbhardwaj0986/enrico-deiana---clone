@@ -227,6 +227,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  #page3 {
+    height: auto;
+  }
+  #page4 {
+    height: auto;
+  }
   .page4-img-div {
     width: 70vw;
     height: 70vw;
@@ -251,7 +257,6 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
-  
 }
 .page5-img-div {
   width: 40vw;
@@ -274,6 +279,11 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  #page5 {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
   .page5-img-div {
     width: 70vw;
     height: 70vw;
@@ -294,30 +304,30 @@ body {
   }
 }
 
-#page4 img:hover body{
-    background-color: red;
+#page4 img:hover body {
+  background-color: red;
 }
 
-#page6{
+#page6 {
   height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#page6 button{
+#page6 button {
   padding: 15px 30px;
   border-radius: 25px;
   border: none;
   font-weight: bold;
- color: #333434;
+  color: #333434;
 }
-#page7{
+#page7 {
   height: 80vh;
   width: 100%;
- white-space: nowrap;
+  white-space: nowrap;
 }
-.moving1 h1{
+.moving1 h1 {
   display: inline-block;
   font-size: 66px;
   animation-name: h1moving;
@@ -327,14 +337,14 @@ body {
 }
 
 @keyframes h1moving {
-  0%{
+  0% {
     transform: translateX(0%);
   }
-  100%{
+  100% {
     transform: translateX(calc(-100% - 4px));
   }
 }
-.moving2 h1{
+.moving2 h1 {
   display: inline-block;
   font-size: 130px;
   font-weight: 100;
@@ -345,14 +355,23 @@ body {
   animation-direction: reverse;
 }
 
+@media only screen and (max-width: 600px) {
+  .moving1 h1 {
+    font-size: 20px;
+  }
+  .moving2 h1 {
+    font-size: 20px;
+  }
+  #page6 {
+    height: auto;
+    margin-bottom:30px ;
+  }
+  #page7 {
+    height: auto;
+  }
+}
 
-
-
-
-
-
-#page8{
+#page8 {
   height: 80vh;
   width: 100%;
- 
 }
